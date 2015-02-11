@@ -27,7 +27,7 @@ Note: still can't work, fail to install ruby1.9.3 or bundle -:)
 
 ## Other Document Tools
 
-- https://github.com/nutzam/nutz
+- [Nutz](https://github.com/nutzam/nutz)
 
 ## How to Document
 
@@ -44,10 +44,11 @@ Note: still can't work, fail to install ruby1.9.3 or bundle -:)
 
 ## Good Blogs
 
-- http://blog.jobbole.com/
-- http://www.yangzhiping.com/
-- http://www.ruanyifeng.com/
+- http://blog.jobbole.com/ "Bole Online"
+- http://www.yangzhiping.com/ "Yang Zhiping"
+- http://www.ruanyifeng.com/ "Ruan Yifeng"
 
 ## Others
 
+- [Top 15 geek blog sites](http://www.computerworld.com/article/2545070/data-center/top-15-geek-blog-sites.html)
 - [国内外知名IT科技博客（强烈推荐）](http://blog.csdn.net/csh624366188/article/details/8681657)
