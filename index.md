@@ -1,15 +1,15 @@
 ---
 layout: page
-title: Welcome!
-tagline: Knowledge share here!
+title: Welcome to my Blog!
+tagline: For personal technical notes collection.
 ---
 {% include JB/setup %}
 
 ## About Me
 
-I'm an software engineer (<https://www.linkedin.com/in/yongsenchen>).
+I'm a software engineer [@LinkedIn](https://www.linkedin.com/in/yongsenchen).
 
-**I worked on**
+I worked on
 
 - Analog TV
 - Digital TV
