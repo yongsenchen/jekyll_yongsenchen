@@ -1,6 +1,6 @@
 ---
 layout: post
-Category : android
+category : android
 tags : [ndk]
 ---
 {% include JB/setup %}

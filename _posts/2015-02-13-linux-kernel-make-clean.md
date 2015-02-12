@@ -1,6 +1,6 @@
 ---
 layout: post
-Category : linux
+category : linux
 tags : [kernel, make, driver]
 ---
 {% include JB/setup %}
