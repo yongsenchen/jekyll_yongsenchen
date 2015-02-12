@@ -125,6 +125,58 @@ The direcroty structure:
 	└── sysroot
 	    └── usr
 
+## Use NDK to Simulate Android mm and mmm
+
+put bellow scripts in build/envsetup.sh. And load it every time before start to build by
+
+	. build/envsetup.sh
+
+build/envsetup.sh
+
+	TOP=`pwd`
+	
+	function hmm() {
+		cat <<EOF
+		Invoke ". build/envsetup.sh" from your shell to add the following functions to your environment:
+		- mm:      Builds all of the modules in the current directory, but not their dependencies.
+		- mmm:     Builds all of the modules in the supplied directories, but not their dependencies.
+
+		Look at the source to view more functions. The complete list is:
+		EOF
+			local A
+			A=""
+			for i in `cat $TOP/build/envsetup.sh | sed -n "/^function /s/function \([a-z_]*\).*/\1/p" | sort`; do
+				A="$A $i"
+			done
+			echo $A
+	}
+	
+	function setpaths()
+	{
+		# setup ndk
+		export ANDROID_NDK_PATH=$TOP/ndk/android-ndk-r10d/
+		export ANDROID_NDK_TOOLCHAIN=$ANDROID_NDK_PATH/ndk-build
+		export PATH=$PATH:$ANDROID_NDK_PATH
+		# setup toolchain
+		export ARM_EABI_TOOLCHAIN_PATH=$TOP/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6/
+		export PATH=$PATH:$ARM_EABI_TOOLCHAIN_PATH/bin
+		export ARM_EABI_TOOLCHAIN=$ARM_EABI_TOOLCHAIN_PATH/bin/arm-ebi-
+		# setup kernel
+		export KDIR=$TOP/kernel/linux-3.10
+		export ANDROID_PRODUCT_OUT=$TOP/out/
+	}
+	setpaths
+	
+	function mmm()
+	{
+		$ANDROID_NDK_TOOLCHAIN -C $1 APP_BUILD_SCRIPT=Android.mk NDK_PROJECT_PATH=$ANDROID_PRODUCT_OUT
+	}
+	
+	function mm()
+	{
+		mmm .
+	}
+
 ## Reference
 
 [1] https://developer.android.com/tools/sdk/ndk/index.html
