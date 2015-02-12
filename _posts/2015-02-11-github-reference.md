@@ -16,7 +16,11 @@ tags : [github, blog, markdown, jekyll]
 
 ## Github Blog
 
-- <http://www.jianshu.com/p/05289a4bc8b2>
+- [如何搭建一个独立博客——简明Github Pages与Hexo教程](http://www.jianshu.com/p/05289a4bc8b2)
+
+## Github for Notes
+
+- Use Github Issues for Notes: <https://github.com/rainy-im/lolita/issues/1>
 
 ## Jekyll References
 
