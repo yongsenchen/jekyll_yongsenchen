@@ -64,7 +64,9 @@ TODO: can we clean it more? Or just do after upon stackoverflow scripts to gener
 
 ## Build Kernel Object
 
-Here is an example.
+This' a good example <http://www.cyberciti.biz/tips/build-linux-kernel-module-against-installed-kernel-source-tree.html>
+
+Here is another one.
 
 	.
 	hello
