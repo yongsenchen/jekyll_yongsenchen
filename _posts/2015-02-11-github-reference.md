@@ -5,6 +5,19 @@ tags : [github, blog, markdown, jekyll]
 ---
 {% include JB/setup %}
 
+## Github Good Things
+
+- Github for Designer: <http://blog.jobbole.com/73944/>
+- Gitbook: <https://www.gitbook.com/explore> and <https://github.com/GitbookIO/gitbook>
+- Free Books: <https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md> and <http://stackoverflow.com/revisions/392926/175>
+- <http://xiaocong.github.io/blog/2013/03/20/team-collaboration-with-github/>
+- <http://liftux.com/posts/using-github-issues-project-management/>
+
+
+## Github Blog
+
+- <http://www.jianshu.com/p/05289a4bc8b2>
+
 ## Jekyll References
 
 - [Jekyll Bootstrap](http://jekyllbootstrap.com)
