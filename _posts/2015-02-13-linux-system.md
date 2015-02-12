@@ -7,4 +7,5 @@ tags : [kernel, debian]
 
 ## Debian Handbook
 
-http://debian-handbook.info/browse/stable/index.html
+- [Debian Linux Kernel Handbook](https://kernel-handbook.alioth.debian.org/index.html)
+- [Debian Handbook](http://debian-handbook.info/browse/stable/index.html)
