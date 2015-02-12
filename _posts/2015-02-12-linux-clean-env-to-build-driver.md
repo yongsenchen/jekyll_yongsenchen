@@ -19,9 +19,22 @@ For example, in ubuntu, only bellow files are required:
 
 Most of it are header files.
 
+But only kernel headers is not enough. For example, bellow way to generate headers can only be used for userspace.
+
+	#cd to the top directory of the kernel source
+	cd linux-3.9
+	make mrproper
+	make ARCH=arm integrator_defconfig
+	make ARCH=arm headers_check
+	make ARCH=arm INSTALL_HDR_PATH=path/to/install/headers headers_install
+
+refer to [stackoverflow](http://stackoverflow.com/questions/11702960/how-to-generate-kernel-headers-of-a-toolchain-for-arm-integrator-target-machine)
+
 Here is the document for how to build it.
 
-	(<https://wiki.debian.org/HowToRebuildAnOfficialDebianKernelPackage>)
+[1] [How to Rebuild An Official Debian Kernel Package](https://wiki.debian.org/HowToRebuildAnOfficialDebianKernelPackage)
+
+[2] [Driver Porting: compiling external modules](http://lwn.net/Articles/21823)
 
 If need to do it by yourself, bellow scripts may help.
 
@@ -40,12 +53,14 @@ If need to do it by yourself, bellow scripts may help.
 	release_kernel()
 	{
 		cd $src
-		make clean ARCH=arm CROSS_COMPILE=arm-eabi-
+		make clean ARCH=arm CROSS_COMPILE=arm-eabi-	# maybe can't clean
 		cd $dst
 		cp -rf $src $dst
 		rmcode $dst
 		cp -rf $src/scripts $dst/scripts  # scripts must be original
 	}
+
+TODO: can we clean it more? Or just do after upon stackoverflow scripts to generate headers?
 
 ## Build Kernel Object
 
