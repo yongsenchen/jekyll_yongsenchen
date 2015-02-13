@@ -120,3 +120,25 @@ Makefile
 Run make, then get the hello.ko.
 
 You can inject it to target device to test it.
+
+
+## Notes
+
+It's not same as to genereate linux kernel headers, we need more. If just generate headers for userspace, see here:
+
+1. genereate the headers
+
+- http://kernelnewbies.org/KernelHeaders
+- https://www.kernel.org/doc/Documentation/kbuild/headers_install.txt
+- http://stackoverflow.com/questions/11702960/how-to-generate-kernel-headers-of-a-toolchain-for-arm-integrator-target-machine
+- http://lwn.net/Articles/21823/
+- http://www.cyberciti.biz/tips/build-linux-kernel-module-against-installed-kernel-source-tree.html
+
+2. generate the scripts like debian, see /usr/src/
+here are references:
+
+- https://wiki.debian.org/HowToRebuildAnOfficialDebianKernelPackage
+- http://kernel-handbook.alioth.debian.org/ch-common-tasks.html
+
+refer to code search: https://codesearch.debian.net/
+
