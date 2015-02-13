@@ -16,15 +16,15 @@ $x^2=1$
 
 [Google](http://google.com)
 
-~~~~{python}
+```python
 print 'hello world'
-~~~~
+```
 
 test `test`
 
-~~~~{c}
+```c
 void func(int)
 {
     int a;
 }
-~~~~
+```
