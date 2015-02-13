@@ -27,6 +27,7 @@ tags : [github, blog, markdown, jekyll]
 ## Jekyll References
 
 - [Jekyll Bootstrap](http://jekyllbootstrap.com)
+- [Clone This one for Jekyll Bootstrap](https://github.com/tmtxt/tmtxt.github.com)
 - [把博客放在Github](http://www.sum16.com/the-blog-on-github.html)
 - [Free Blog: Github Pages +
 Jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
