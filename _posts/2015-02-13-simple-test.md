@@ -24,3 +24,11 @@ test
     {
         int a;
     }
+
+
+```c
+void func(int)
+{
+    int a;
+}
+```
