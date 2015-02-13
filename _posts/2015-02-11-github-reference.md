@@ -33,6 +33,9 @@ Jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
 
 ## Markdown References
 
+- [Writing on Github](https://help.github.com/articles/writing-on-github/)
+- [Github Markdown](https://guides.github.com/features/mastering-markdown/)
+- [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 - [Markdown: Basic](http://wowubuntu.com/markdown/basic.html)
 
 ## Octopress References
