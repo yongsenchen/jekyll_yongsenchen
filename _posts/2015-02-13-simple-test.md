@@ -20,15 +20,15 @@ $x^2=1$
 
 test
 
-    void func(int)
+    void func(int a, int b)
     {
-        int a;
+        return a + b;
     }
 
 
 ```c
-void func(int)
+void func(int a, int b)
 {
-    int a;
+    return a + b;
 }
 ```
