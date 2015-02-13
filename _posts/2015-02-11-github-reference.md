@@ -17,6 +17,8 @@ tags : [github, blog, markdown, jekyll]
 ## Github Blog
 
 - [如何搭建一个独立博客——简明Github Pages与Hexo教程](http://www.jianshu.com/p/05289a4bc8b2)
+- [o-blog with emacs](http://renard.github.com/o-blog/)
+- [o-blog code](https://github.com/renard/o-blog)
 
 ## Github for Notes
 
