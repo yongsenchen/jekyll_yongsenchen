@@ -8,7 +8,9 @@ tags : [network, wol]
 Wake on Lan (WoL) can work in bellow ways:
 
 - Network: <http://www.wakeonlan.me/>
-- Windows: <http://windows7-issues.blogspot.com/2011/03/wake-on-lan-wol-for-windows-7-made-easy.html>
+- Windows:
+  - Guide: <http://windows7-issues.blogspot.com/2011/03/wake-on-lan-wol-for-windows-7-made-easy.html>
+  - Tool: <http://www.matcode.com/wol.htm>
+  - Command: `mc-wol.exe 00:32:53:99:25:4a`
 - Ubuntu:
-
-	etherwake -i eth0 00:11:22:33:44:55
+  - Command: `etherwake -i eth0 00:32:53:99:25:4a`
