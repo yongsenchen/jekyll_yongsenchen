@@ -16,15 +16,11 @@ $x^2=1$
 
 [Google](http://google.com)
 
-```python
-print 'hello world'
-```
+    print 'hello world'
 
-test `test`
+test
 
-```c
-void func(int)
-{
-    int a;
-}
-```
+    void func(int)
+    {
+        int a;
+    }
