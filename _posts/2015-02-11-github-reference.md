@@ -29,12 +29,27 @@ tags : [github, blog, markdown, jekyll]
 
 - [Jekyll](http://jekyllrb.com/)
 - [Jekyll Bootstrap](http://jekyllbootstrap.com)
-- [Clone This one for Jekyll Bootstrap with Highlight](https://github.com/tmtxt/tmtxt.github.com)
-- [Jekyll Bootstrap Highlight](http://truongtx.me/2012/12/28/jekyll-bootstrap-syntax-highlighting/)
-- Highlight Ways: https://gist.github.com/zakkain/3203448
 - [把博客放在Github](http://www.sum16.com/the-blog-on-github.html)
 - [Free Blog: Github Pages +
 Jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
+
+### Highlight
+
+Highlight approaches: http://ajoz.github.io/2014/06/29/i-want-my-github-flavored-markdown/
+- kramdown + highlight.js
+- redcarpet + highlighter: pygments
+
+Some links:
+- [Clone This one for Jekyll Bootstrap with Highlight](https://github.com/tmtxt/tmtxt.github.com)
+- [Jekyll Bootstrap Highlight](http://truongtx.me/2012/12/28/jekyll-bootstrap-syntax-highlighting/)
+- Highlight Ways: https://gist.github.com/zakkain/3203448
+
+### Table of Content (TOC)
+
+TOC is supported by:
+- kramdown
+
+For others, can use plugin to support it: https://github.com/dafi/jekyll-toc-generator 
 
 ## Markdown References
 
