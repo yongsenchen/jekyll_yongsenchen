@@ -7,6 +7,9 @@ highlighter: pygments
 # set markdown intepreter. can be redcarpet, kramdown, ...
 markdown: redcarpet
 # markdown: kramdown
+# markdown: rdiscount
+
+# for all the intepreters, refer to http://ajoz.github.io/2014/06/29/i-want-my-github-flavored-markdown/
 
 # Make redcarpet behave like GitHub Flavored Markdown
 # refer to http://sholsinger.com/2014/03/jekyll-github-flavored-markdown
@@ -15,7 +18,15 @@ redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "strikethrough", "superscript", "with_toc_data"]
 
 kramdown:
+  auto_ids: true
   input: GFM
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  use_coderay: false
+
+rdiscount:
+  extensions: ["autolink", "footnotes", "generate_toc", "smart"]
+  toc_token: "[TOC]"
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
