@@ -19,6 +19,7 @@ tags : [github, blog, markdown, jekyll]
 - [如何搭建一个独立博客——简明Github Pages与Hexo教程](http://www.jianshu.com/p/05289a4bc8b2)
 - [o-blog with emacs](http://renard.github.com/o-blog/)
 - [o-blog code](https://github.com/renard/o-blog)
+- [Github Plugin Versions](https://pages.github.com/versions/)
 
 ## Github for Notes
 
@@ -26,6 +27,7 @@ tags : [github, blog, markdown, jekyll]
 
 ## Jekyll References
 
+- [Jekyll](http://jekyllrb.com/)
 - [Jekyll Bootstrap](http://jekyllbootstrap.com)
 - [Clone This one for Jekyll Bootstrap with Highlight](https://github.com/tmtxt/tmtxt.github.com)
 - [Jekyll Bootstrap Highlight](http://truongtx.me/2012/12/28/jekyll-bootstrap-syntax-highlighting/)
@@ -40,6 +42,12 @@ Jekyll](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html)
 - [Github Markdown](https://guides.github.com/features/mastering-markdown/)
 - [Github Flavored Markdown](https://help.github.com/articles/github-flavored-markdown/)
 - [Markdown: Basic](http://wowubuntu.com/markdown/basic.html)
+
+### Markdown Intepreter
+
+- http://kramdown.gettalong.org/syntax.html
+- 
+
 
 ## Octopress References
 
