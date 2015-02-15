@@ -1,7 +1,7 @@
 ---
 layout: post
 category : security
-tags : [smartcard]
+tags : [smart card]
 ---
 
 http://simple.wikipedia.org/wiki/Smart_card
