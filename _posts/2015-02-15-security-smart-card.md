@@ -12,3 +12,4 @@ Good Reference in Chinese (with good explaination on a smart card OS with 3DES):
 
 - SmartCOS v3.5 User Guide: http://mwcard.com/index.php?Itemid=175&option=com_zoo&view=item&category_id=4&item_id=17
 - 已通过检测企业及产品名单（卡片操作系统类）: http://www.icfw.com.cn/chanpinjiance/tongguojiancechanpinmingdan/2013-01-17/1896.html
+- http://www.shhic.com/products.aspx?type=%E5%AE%89%E5%85%A8%E6%8E%A7%E5%88%B6%E8%8A%AF%E7%89%87
