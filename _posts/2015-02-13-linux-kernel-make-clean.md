@@ -3,7 +3,6 @@ layout: post
 category : linux
 tags : [kernel, make, driver]
 ---
-{% include JB/setup %}
 
 ## Difference of make clean/mrproper/distclean
 

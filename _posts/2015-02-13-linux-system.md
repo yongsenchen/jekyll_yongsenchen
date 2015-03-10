@@ -3,7 +3,6 @@ layout: post
 category : linux
 tags : [kernel, debian]
 ---
-{% include JB/setup %}
 
 ## Debian Handbook
 

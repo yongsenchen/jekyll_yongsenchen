@@ -3,7 +3,6 @@ layout: post
 category : doc
 tags : [github, blog, markdown, jekyll]
 ---
-{% include JB/setup %}
 
 ## Github Good Things
 

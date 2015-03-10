@@ -3,7 +3,6 @@ layout: post
 category : linux
 tags : [kernel, driver]
 ---
-{% include JB/setup %}
 
 ## Generate Environment to Build Kernel Object
 

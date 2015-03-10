@@ -3,7 +3,6 @@ layout: post
 category : android
 tags : [ndk]
 ---
-{% include JB/setup %}
 
 ## Download NDK
 

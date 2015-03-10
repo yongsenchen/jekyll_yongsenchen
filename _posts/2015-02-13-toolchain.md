@@ -3,7 +3,6 @@ layout: post
 category : toolchain
 tags : [gcc]
 ---
-{% include JB/setup %}
 
 This page collect the trouble shooting on toolchain.
 

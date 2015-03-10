@@ -3,7 +3,6 @@ layout: post
 category : doc
 tags : [wiki]
 ---
-{% include JB/setup %}
 
 ## Wiki Hosting Sites
 

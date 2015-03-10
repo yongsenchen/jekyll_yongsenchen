@@ -3,7 +3,6 @@ layout: post
 category : network
 tags : [network, wol]
 ---
-{% include JB/setup %}
 
 Wake on Lan (WoL) can work in bellow ways:
 

@@ -3,7 +3,6 @@ layout: post
 category : doc
 tags : [github, blog, jekyll]
 ---
-{% include JB/setup %}
 
 ## Reference
 
