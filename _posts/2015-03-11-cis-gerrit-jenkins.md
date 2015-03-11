@@ -12,7 +12,7 @@ Good Reference:
 * [Git、Gerrit与Jenkins/Hudson CI服务器](http://www.infoq.com/cn/articles/Gerrit-jenkins-hudson/)
 * [软件项目管理平台：repo+gerrit+jenkins+gitlab+sonar+redmine](http://blog.csdn.net/threesan333/article/details/38063495)
 
-Note: besides the steps in "http://yicfu.postach.io/link/gerrit-yu-jenkins-ji-cheng-pei-zhi-de-zui-kuai-shang-shou-zhan-shi-shuo-ming-2014nian-xin-ban", in "Source Code Management", add "Check out to a sub-directory", and specify local directory.
+Note: besides the steps in [Gerrit 与 Jenkins 集成配置的最快上手一站式说明（2014年新版）](http://yicfu.postach.io/link/gerrit-yu-jenkins-ji-cheng-pei-zhi-de-zui-kuai-shang-shou-zhan-shi-shuo-ming-2014nian-xin-ban), in "Source Code Management", add "Check out to a sub-directory", and specify local directory.
 
 # TODO for study
 
