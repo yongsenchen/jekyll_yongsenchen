@@ -1,0 +1,102 @@
+---
+layout: post
+category : cis
+tags : [gerrit, jenkins]
+---
+
+Good Reference: 
+- [Gerrit 与 Jenkins 集成配置的最快上手一站式说明（2014年新版）](http://yicfu.postach.io/link/gerrit-yu-jenkins-ji-cheng-pei-zhi-de-zui-kuai-shang-shou-zhan-shi-shuo-ming-2014nian-xin-ban)
+- [基于Jenkins的自动构建系统开发](http://kurenai.elastos.org/2013/05/29/%E5%9F%BA%E4%BA%8Ejenkins%E7%9A%84%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91/)
+- [CI 系统搭建：Git、Gerrit与Jenkins](http://blog.csdn.net/williamwanglei/article/details/38498465)
+- [Git、Gerrit与Jenkins/Hudson CI服务器](http://www.infoq.com/cn/articles/Gerrit-jenkins-hudson/)
+- [软件项目管理平台：repo+gerrit+jenkins+gitlab+sonar+redmine](http://blog.csdn.net/threesan333/article/details/38063495)
+
+
+# CIS Server Configurations
+
+```sh
+cis=`pwd`
+gerrit=$cis/gerrit
+jenkins=$cis
+
+install_libs()
+{
+        # install jre
+        apt-get install default-jre daemon
+}
+
+install_gerrit()
+{
+        cd $cis
+
+        ver=$1
+        if [ is"$ver" = is"" ]; then
+                ver=2.9.4
+        fi
+        # download gerrit
+        #wget http://gerrit-releases.storage.googleapis.com/gerrit-$ver.war
+
+        # install gerrit
+        java -jar gerrit-$ver.war init -d $cis/gerrit/
+}
+
+install_repo()
+{
+        # get repo for client side, not necessary
+        curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+        chmod a+x ~/bin/repo
+        sudo cp ~/bin/repo /usr/local/bin/repo
+
+        # download repo git to speed up initialization
+        git clone --mirror https://gerrit.googlesource.com/git-repo.git $gerrit/git/git-repo.git
+}
+
+install_jenkins()
+{
+        cd $cis
+        # download jekins
+        wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war
+}
+#install_jenkins
+```
+
+# CIS Client Configurations
+
+```sh
+server="10.0.12.110"
+repos=`pwd`/repos
+
+gitconfig()
+{
+        # global configurations for current user, in ~/.gitconfig
+        git config --global user.name "Yongsen Chen"
+        git config --global user.email yongsenchen@github.com
+        git config --global core.fileMode false
+
+        # operations alias for all users, in /etc/gitconfig
+        sudo git config --system alias.st status
+        sudo git config --system alias.ci commit
+        sudo git config --system alias.co checkout
+        sudo git config --system alias.br branch
+        sudo git config --system alias.sh show
+}
+
+download_repo()
+{
+        # get repo applications
+        # curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+        sudo curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > /usr/local/bin/repo
+        sudo chmod a+x /usr/local/bin/repo
+}
+
+fetch_code()
+{
+        mkdir -p $repos
+        cd $repos
+        # note: when fetch code, must use ssh://$server:29418, http can't work
+        repo init -u ssh://$server:29418/manifests -b master --repo-url=ssh://$server:29418/git-repo.git
+        repo sync
+        repo forall -c "scp -p -P 29418 $server:hooks/commit-msg .git/hooks/"
+}
+fetch_code
+```
