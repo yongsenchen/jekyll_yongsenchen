@@ -12,6 +12,9 @@ Good Reference:
 * [Git、Gerrit与Jenkins/Hudson CI服务器](http://www.infoq.com/cn/articles/Gerrit-jenkins-hudson/)
 * [软件项目管理平台：repo+gerrit+jenkins+gitlab+sonar+redmine](http://blog.csdn.net/threesan333/article/details/38063495)
 
+# TODO
+
+google repo plugin can help for building with repo gits: https://wiki.jenkins-ci.org/display/JENKINS/Repo+Plugin
 
 # CIS Server Configurations
 
