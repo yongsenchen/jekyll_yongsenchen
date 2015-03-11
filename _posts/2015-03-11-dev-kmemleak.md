@@ -10,6 +10,7 @@ The memory may be allocated by kmalloc/kzalloc, vmalloc, kmem_cache_alloc or per
 # Build in kmemleak in linux kernel
 
 Enable CONFIG_DEBUG_KMEMLEAK in kernel config, then build the kernel.
+
 ```
 Kernel hacking --->
     [*] Kernel memory leak detector
@@ -29,6 +30,7 @@ cat /sys/kernel/debug/kmemleak
 ```
 
 It would show the issue points with something like bellow, which shows the leak address, size, and process name and ID.
+
 ```
 unreferenced object 0xf3952000 (size 1024):
   comm "process_name", pid 245, jiffies 4529281928 (age 1245.640s)
@@ -40,6 +42,7 @@ unreferenced object 0xf3952000 (size 1024):
 ```
 
 And you can clear previous result by
+
 ```sh
 echo clear > /sys/kernel/debug/kmemleak
 ```
@@ -51,6 +54,7 @@ echo clear > /sys/kernel/debug/kmemleak
 
 # Useful commands
 refer to $linux/Documentation/kmemleak.txt
+
 ```
   off           - disable kmemleak (irreversible)
   stack=on      - enable the task stacks scanning (default)
