@@ -4,7 +4,8 @@ category : cis
 tags : [gerrit, jenkins]
 ---
 
-Good Reference: 
+Good Reference:
+
 - [Gerrit 与 Jenkins 集成配置的最快上手一站式说明（2014年新版）](http://yicfu.postach.io/link/gerrit-yu-jenkins-ji-cheng-pei-zhi-de-zui-kuai-shang-shou-zhan-shi-shuo-ming-2014nian-xin-ban)
 - [基于Jenkins的自动构建系统开发](http://kurenai.elastos.org/2013/05/29/%E5%9F%BA%E4%BA%8Ejenkins%E7%9A%84%E8%87%AA%E5%8A%A8%E6%9E%84%E5%BB%BA%E7%B3%BB%E7%BB%9F%E5%BC%80%E5%8F%91/)
 - [CI 系统搭建：Git、Gerrit与Jenkins](http://blog.csdn.net/williamwanglei/article/details/38498465)
