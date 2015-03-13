@@ -81,6 +81,30 @@ install_jenkins()
         wget http://mirrors.jenkins-ci.org/war/latest/jenkins.war
 }
 #install_jenkins
+
+start_cis()
+{
+        #start gerrit
+        cd $gerrit
+        ./gerrit.sh start
+
+        #start jenkins
+        cd $cis
+        java -jar jenkins.war --httpPort=8081
+}
+start_cis
+
+setup_jenkins()
+{
+        # add jenkins account in gerrit
+        ssh -p 29418 localhost gerrit create-account jenkins --ssh-key - < ~/.ssh/id_dsa.pub
+
+        # notes:
+        # 1. if it shows nulljob/calc/17/ in gerrit (BUILDURL=nullojb), then go to
+        #    "System Configuration", and click Save, then it's changed to valid one:
+        #    http://10.37.116.110:8081/job/calc/17/
+        #
+}
 ```
 
 # CIS Client Configurations
