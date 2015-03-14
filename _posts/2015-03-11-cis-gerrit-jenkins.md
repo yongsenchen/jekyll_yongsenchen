@@ -17,6 +17,10 @@ Note: besides the steps in [Gerrit 与 Jenkins 集成配置的最快上手一站
 Note: If need add Verified, then no need to remove the --verified <VERIFIED>, keep as bellow:
 gerrit review <CHANGE>,<PATCHSET> --message 'Build Started <BUILDURL> <STARTED_STATS>' --code-review <CODE_REVIEW> --verified <VERIFIED>
 
+## Redmine
+
+http://www.redmine.org/projects/redmine/wiki/HowTo_Install_Redmine_on_Ubuntu_step_by_step
+
 
 # TODO for study
 
