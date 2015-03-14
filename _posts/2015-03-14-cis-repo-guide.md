@@ -57,8 +57,8 @@ repos=`pwd`/repos
 gitconfig()
 {
         # global configurations for current user, in ~/.gitconfig
-        git config --global user.name chenys
-        git config --global user.email chenys@marvell.com
+        git config --global user.name "Yongsen Chen"
+        git config --global user.email yongsenchen@google.com
         git config --global core.fileMode false
 
         # operations alias for all users, in /etc/gitconfig
