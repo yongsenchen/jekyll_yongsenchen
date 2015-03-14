@@ -14,6 +14,10 @@ Good Reference:
 
 Note: besides the steps in [Gerrit 与 Jenkins 集成配置的最快上手一站式说明（2014年新版）](http://yicfu.postach.io/link/gerrit-yu-jenkins-ji-cheng-pei-zhi-de-zui-kuai-shang-shou-zhan-shi-shuo-ming-2014nian-xin-ban), in "Source Code Management", add "Check out to a sub-directory", and specify local directory.
 
+Note: If need add Verified, then no need to remove the --verified <VERIFIED>, keep as bellow:
+gerrit review <CHANGE>,<PATCHSET> --message 'Build Started <BUILDURL> <STARTED_STATS>' --code-review <CODE_REVIEW> --verified <VERIFIED>
+
+
 # TODO for study
 
 https://wiki.jenkins-ci.org/display/JENKINS/Plugins
@@ -59,7 +63,7 @@ install_gerrit()
         # download gerrit
         #wget http://gerrit-releases.storage.googleapis.com/gerrit-$ver.war
 
-        # install gerrit
+        # install or upgrade gerrit (when upgrade, just always enter)
         java -jar gerrit-$ver.war init -d $cis/gerrit/
 }
 
@@ -103,7 +107,8 @@ setup_jenkins()
         # 1. if it shows nulljob/calc/17/ in gerrit (BUILDURL=nullojb), then go to
         #    "System Configuration", and click Save, then it's changed to valid one:
         #    http://10.37.116.110:8081/job/calc/17/
-        #
+        # 2. can test jenkins to review as bellow
+        #    ssh -p 29418 jenkins@localhost gerrit review 5,4 --message \"verified ok\" --code-review 1 --verified 1
 }
 ```
 
