@@ -192,6 +192,7 @@ Submit Type:            Cherry Pick
       -1 +1  user/Jenkins (jenkins)
   ```
 3. Add jenkins to group "Non-Interactive Users".
+
    Do it in [People] > [Non-Interactive Users] > [Members], click Add.
 
 # Client Side
