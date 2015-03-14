@@ -4,7 +4,9 @@ category : cis
 tags : [gerrit]
 ---
 
-# Overview Scripts
+# Server Side
+
+## Overview Scripts
 
 ```sh
 cis=`pwd`
@@ -26,7 +28,7 @@ cd $gerrit/bin
 ./gerrit.sh start
 ```
 
-# Install Gerrit Detailed Instructions
+## Install Gerrit Detailed Instructions
 
 Here is an example to setup with LDAP authentication.
 
@@ -81,10 +83,10 @@ SMTP username                  :
 *** Container Process
 ***
 
-Run as                         [devenv]:
+Run as                         [yourname]:
 Java runtime                   [/usr/lib/jvm/java-7-openjdk-amd64/jre]:
-Upgrade /home/devenv/cis/gerrit/bin/gerrit.war [Y/n]?
-Copying gerrit-2.10.war to /home/devenv/cis/gerrit/bin/gerrit.war
+Upgrade /home/yourname/cis/gerrit/bin/gerrit.war [Y/n]?
+Copying gerrit-2.10.war to /home/yourname/cis/gerrit/bin/gerrit.war
 
 *** SSH Daemon
 ***
@@ -120,3 +122,93 @@ Starting Gerrit Code Review: OK
 ```
 
 Note: for "Install Verified label         [y/N]?", if you or jenkins need label Verified, then please set it as y.
+
+## Setup user accounts
+
+1. open http://10.99.116.110:8080
+2. login with your username (say yourname), the first login user is the administrator (ID=1).
+3. for other uses, can login after you have login.
+
+## Setup access permissions
+
+### Setup access permissions for All-Projects
+
+Make necessary changes for default configurations, say support wip branch.
+
+```
+Reference:	refs/heads/wip/*
+  Create Reference
+    Registered Users
+  Push Exclusive
+    Registered Users       Force Push
+```
+
+### Setup access permissions for other projects
+
+1. inherite from All-Projects
+2. add project specified permissions
+
+## Create projects (repositories) in server
+
+in [Projects] >> [Create New Project], set bellow
+
+```
+Project Name:           <name of the project>
+Rights Inherit From:		<suggest to be All-Projects>
+Create initial empty commit
+Only serve as parent for other projects
+```
+
+in [Projects] >> [General], set bellow
+
+```
+Submit Type:            Cherry Pick
+```
+
+## Setup jenkins user for jenkins
+
+1. In the shell, run bellow:
+
+  ```sh
+  ssh -p 29418 yourname@localhost gerrit create-account jenkins --ssh-key - < ~/.ssh/id_dsa.pub
+          or
+  ssh -p 29418 yourname@10.99.116.110 gerrit create-account jenkins --ssh-key - < ~/.ssh/id_dsa.pub
+  ```
+2. Open gerrit web (http://10.99.116.110:8080), in [Projects] > [All-Projects] > [Access], set
+
+  ```
+  Global Capabilities	
+    Administrate Server
+      ALLOW Administrators
+    Priority
+      Non-Interactive Users
+    Stream Events
+      Non-Interactive Users
+  
+  Reference:	refs/heads/*
+    Label Code-Review Exclusive
+      -1 +1  user/Jenkins (jenkins)
+    Label Verified Exclusive
+      -1 +1  user/Jenkins (jenkins)
+  ```
+3. Add jenkins to group "Non-Interactive Users".
+   Do it in [People] > [Non-Interactive Users] > [Members], click Add.
+
+# Client Side
+
+## Register Users
+
+1. Login gerrit web with your Windows (LDAP) user name and password.
+2. Add you local public key to gerrit.
+   * in top-right, click your user name, then [Settings] > [SSH Public Keys] > [Add Key..]
+   * Get key with bellow command.
+
+      ```sh
+      $ cat ~/.ssh/id_dsa.pub
+      ```
+   * If you can't find the key, then use bellow command to generate one.
+
+      ```sh
+      $ ssh-keygen
+      ```
+3. Change other necessary settings in [Settings] > [Profile], say User Name
