@@ -1,7 +1,7 @@
 ---
 layout: post
 category : cis
-tags : [gerrit]
+tags : [repo, git, gerrit]
 ---
 
 # Server Side Setup
