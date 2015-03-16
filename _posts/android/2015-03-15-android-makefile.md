@@ -18,7 +18,10 @@ If you don't want your application to be built into final product, then just rem
 
 # Add Prebuilts
 
-1. Use PRODUCT_COPY_FILES, "+= src:dst".
+here is a good reference http://blog.csdn.net/jscese/article/details/40615801.
+
+1. Use PRODUCT_COPY_FILES, "+= src:dst". Copy file only, can't execute any
+   script. So the source file can't get any dependencies.
 2. Use BUILD_PREBUILT
 3. Use BUILD_MULTI_PREBUILT, only support known types.
 4. use add-prebuilt-files. do as bellow: "$(call add-prebuilt-files, class, filename)"
