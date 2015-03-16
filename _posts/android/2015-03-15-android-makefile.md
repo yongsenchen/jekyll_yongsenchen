@@ -8,6 +8,7 @@ tags : [android, makefile]
 * http://www.ibm.com/developerworks/cn/opensource/os-cn-android-build/
 * [Understanding of Android Build system](http://www.programering.com/a/MDN5EDNwATM.html)
 * [深入浅出Android makefile](http://blog.csdn.net/memechashang/article/details/23428841)
+* http://blog.csdn.net/zhangchiytu/article/details/6424910
 
 # Add your applications into products
 
