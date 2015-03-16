@@ -6,6 +6,8 @@ tags : [key]
 
 NIST Key Length: http://www.keylength.com/en/4/
 
+Wiki: http://en.wikipedia.org/wiki/Key_size
+
 http://baike.baidu.com/view/10613.htm?fromtitle=RSA%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95&fromid=9645994&type=syn
 
 | 保密级别 | 对称密钥长度（bit） | RSA密钥长度（bit） | ECC密钥长度（bit） | 保密年限 |
