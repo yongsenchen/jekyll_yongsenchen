@@ -1,7 +1,7 @@
 ---
 layout: post
-category : develop
-tags : [dev, memleak]
+category : linux
+tags : [debug, memleak, kmemleak]
 ---
 
 kmemleak can be used to trace memleak in kernel space.

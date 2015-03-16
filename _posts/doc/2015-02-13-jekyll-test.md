@@ -1,6 +1,6 @@
 ---
 layout: post
-category : wiki
+category : doc
 tags : [jekyll, github]
 ---
 

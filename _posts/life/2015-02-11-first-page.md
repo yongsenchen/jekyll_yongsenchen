@@ -1,7 +1,7 @@
 ---
 layout: post
-category : updates
-tags : [life]
+category : life
+tags : [updates]
 ---
 
 [Jekyll Bootstrap](http://jekyllbootstrap.com) is a really wonderful toolkit to bring-up Jekyll in github.
