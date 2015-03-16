@@ -1,6 +1,6 @@
 ---
 layout: post
-category : network
+category : power
 tags : [network, wol]
 ---
 
