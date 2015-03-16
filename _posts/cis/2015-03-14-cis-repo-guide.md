@@ -80,3 +80,7 @@ fetch_code()
         repo forall -c "scp -p -P 29418 $server:hooks/commit-msg .git/hooks/"
 }
 ```
+
+# User Guide
+
+* http://xda-university.com/as-a-developer/repo-tips-tricks
