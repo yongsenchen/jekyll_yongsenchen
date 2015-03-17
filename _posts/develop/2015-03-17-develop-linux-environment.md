@@ -6,6 +6,10 @@ tags : [tools]
 
 # Linux Tools
 
+## Bash
+
+* Bash Config: http://tldp.org/LDP/abs/html/sample-bashrc.html
+
 ## Screen
 * User Guide: http://www.cnblogs.com/mchina/archive/2013/01/30/2880680.html
 * Screen Configurations: http://www.snooda.com/read/268 or http://www.opstool.com/article/177 or http://vincentzhwg.iteye.com/blog/2021803
