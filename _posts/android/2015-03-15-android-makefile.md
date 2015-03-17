@@ -50,3 +50,9 @@ include $(BUILD_MULTI_PREBUILT)
 ```
 
 * http://www.phonesdevelopers.com/1724715/
+
+
+# Others
+
+* [Android源码下载与编译全过程](http://blog.csdn.net/fengliang191/article/details/40679793)
+* [深入分析Android (build/core/*.mk脚本)](http://blog.csdn.net/wh_19910525/article/details/7519919)
