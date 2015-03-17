@@ -9,6 +9,7 @@ tags : [android, makefile]
 * [Understanding of Android Build system](http://www.programering.com/a/MDN5EDNwATM.html)
 * [深入浅出Android makefile](http://blog.csdn.net/memechashang/article/details/23428841)
 * http://blog.csdn.net/zhangchiytu/article/details/6424910
+* http://android.mk/
 
 # Add your applications into products
 
