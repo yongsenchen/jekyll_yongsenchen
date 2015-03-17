@@ -18,3 +18,7 @@ They will give you wonderful inputs. Or it would give you a guide to start.
 
 * http://www.wowotech.net/
 * Code Search: http://lxr.free-electrons.com/
+
+# Android Reference
+
+* http://wiki.cyanogenmod.org/
