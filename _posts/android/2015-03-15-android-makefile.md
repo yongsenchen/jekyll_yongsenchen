@@ -10,6 +10,7 @@ tags : [android, makefile]
 * [深入浅出Android makefile](http://blog.csdn.net/memechashang/article/details/23428841)
 * http://blog.csdn.net/zhangchiytu/article/details/6424910
 * http://android.mk/
+* http://www.kandroid.org/ndk/docs/ANDROID-MK.html
 
 # Add your applications into products
 
