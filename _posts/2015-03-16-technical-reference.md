@@ -21,4 +21,5 @@ They will give you wonderful inputs. Or it would give you a guide to start.
 
 # Android Reference
 
+* https://source.android.com/source/initializing.html
 * http://wiki.cyanogenmod.org/
