@@ -17,3 +17,4 @@ They will give you wonderful inputs. Or it would give you a guide to start.
 # Linux Reference
 
 * http://www.wowotech.net/
+* Code Search: http://lxr.free-electrons.com/
