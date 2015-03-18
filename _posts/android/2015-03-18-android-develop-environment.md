@@ -9,13 +9,28 @@ tags : [android, environment]
 * http://askubuntu.com/questions/56104/how-can-i-install-sun-oracles-proprietary-java-jdk-6-7-8-or-jre
 * http://askubuntu.com/questions/521145/how-to-install-oracle-java-on-ubuntu-14-04
 * Oracle: https://blogs.oracle.com/roumen/entry/installing_sun_s_jdk_6
-    ```
+```
     You can find out where is java installed by running "which java".
     The version can be determined by running "java -version".
-    To install Sun's JDK 6, switch to root and run "apt-get install sun-java6-jdk". You can also run sudo if you don't want to switch to root: "sudo apt-get install sun-java6-jdk".
+    To install Sun's JDK 6, switch to root and run "apt-get install sun-java6-jdk".
+    You can also run sudo if you don't want to switch to root: "sudo apt-get install sun-java6-jdk".
     Proceed with the installation and confirm the license terms.
     Now you should get the correct message when running "java -version":
     java version "1.6.0"
     Java(TM) SE Runtime Environment (build 1.6.0-b105)
     Java HotSpot(TM) Client VM (build 1.6.0-b105, mixed mode, sharing)
-    ```
+```
+* http://stackoverflow.com/questions/9918093/installing-sun-java6-jdk-on-ubuntu-10-04-64-bit-os
+```
+    you could install sun jdk for Ubuntu 10.04 in the same way as 10.10.
+    The steps for installing java in 10.10 is described in http://java.dzone.com/articles/sun-java-6-ubuntu-1004-1010
+    here's the steps of installing sun jdk, taken from that article:
+    
+    add-apt-repository ppa:sun-java-community-team/sun-java6
+    apt-get update
+    apt-get install sun-java6-jdk
+    update-java-alternatives -s java-6-sun
+    
+    in case the repository mentioned above not available anymore, here is a manual-ish alternative in installing JDK:
+    http://codingforme.wordpress.com/2012/05/14/installing-oracle-java-jdk-6-or-7-on-ubuntu-12-04/
+```
