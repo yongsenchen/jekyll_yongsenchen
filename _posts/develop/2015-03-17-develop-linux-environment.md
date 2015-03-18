@@ -32,4 +32,7 @@ Split screen:
 * C-a Q         close all other windows
 
 ## VI
-* VI Configurations: 
+* VI Configurations: https://github.com/ma6174/vim
+
+## SHELL for Putty
+
