@@ -6,6 +6,24 @@ tags : [android, environment]
 
 # install oracal jdk 6/7/8 for ubuntu
 
+1. download http://www.oracle.com/technetwork/java/javase/downloads/index.html
+2. install it
+```sh
+tar -xvf jdk-6*
+sudo mkdir -p /usr/lib/jvm
+sudo mv jdk1.6.0_45 /usr/lib/jvm/oracle_jdk1.6.0_45
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/oracle_jdk1.6.0_45/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/oracle_jdk1.6.0_45/bin/javac" 1
+sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/oracle_jdk1.6.0_45/bin/javaws" 1
+sudo chmod a+x /usr/bin/java
+sudo chmod a+x /usr/bin/javac
+sudo chmod a+x /usr/bin/javaws
+# sellect the new one
+sudo update-alternatives --config java
+sudo update-alternatives --config javac
+sudo update-alternatives --config javaws
+```
+
 * http://askubuntu.com/questions/56104/how-can-i-install-sun-oracles-proprietary-java-jdk-6-7-8-or-jre
 * http://askubuntu.com/questions/521145/how-to-install-oracle-java-on-ubuntu-14-04
 * Oracle: https://blogs.oracle.com/roumen/entry/installing_sun_s_jdk_6
