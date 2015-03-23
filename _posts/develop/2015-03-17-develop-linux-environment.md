@@ -39,5 +39,19 @@ Split screen:
 * http://www.putty.org/
 * Change color of blue to "0/0/187", and save.
   * another setting: http://blog.csdn.net/pan_tian/article/details/8111390
-  * http://jimingsong.iteye.com/blog/1559012 or http://www.cnblogs.com/nayitian/archive/2013/01/18/2866690.html
+  * http://jimingsong.iteye.com/blog/1559012
+  * http://www.cnblogs.com/nayitian/archive/2013/01/18/2866690.html
 * Putty connect to Android adb (not verified): http://blog.sina.com.cn/s/blog_4502d59c01018eus.html
+
+Putty connect to ADB:
+
+http://blog.sina.com.cn/s/blog_4502d59c01018eus.html
+
+Install the adb driver first, and ensure adb shell can be connected correctly to your mobile device.
+
+the putty to connect to this interface always, by setting the following things:
+- Turn off line discipline in settings(Terminal--Local echo:Force off Local line-editing:Force off)
+- Use RAW mode to connect to localhost:5037
+- Enter "0012host:transport-usb" (use mouse right button)
+  PS.Don't put anykey with keyboard
+- Enter "0006shell:" (use mouse right button)
