@@ -36,8 +36,8 @@ Split screen:
 * VIM config: https://code.google.com/p/jeffy-vim
 
 ## SHELL for Putty
-* http://www.putty.org/
-* Change color of blue to "0/0/187", and save.
+* download latest version from http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html, http://www.putty.org/
+* Change color of blue if necessary.
   * another setting: http://blog.csdn.net/pan_tian/article/details/8111390
   * http://jimingsong.iteye.com/blog/1559012
   * http://www.cnblogs.com/nayitian/archive/2013/01/18/2866690.html
