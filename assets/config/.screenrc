@@ -1,0 +1,5 @@
+vbell off
+escape ^Zz
+caption always "%{Yk}%-w%50>%{rb}%n %t%{-}%+w%81<%{- Yk}%{Bk}|%=%{bk} %Y-%m-%d %C "
+bind w windowlist -b
+
