@@ -1,5 +1,76 @@
-vbell off
-escape ^Zz
-caption always "%{Yk}%-w%50>%{rb}%n %t%{-}%+w%81<%{- Yk}%{Bk}|%=%{bk} %Y-%m-%d %C "
-bind w windowlist -b
+# bellow settings based on:
+# http://vincentzhwg.iteye.com/blog/2021803
+# http://www.softpanorama.org/Utilities/Screen/screenrc_examples.shtml
 
+# Set default encoding using utf8
+defutf8 on
+
+# avoid messy output in Chinese
+defencoding utf8
+encoding utf8 utf8
+
+# compate with shell, so settings in .bashrc .profile /etc/profile can work
+shell -$SHELL
+
+# disable startup message
+startup_message off
+term linux
+
+# support scroll bar and mouse
+#termcapinfo xterm|xterms|xs|rxvt ti@:te=\E[2J
+termcapinfo xterm|xterms|xs|rxvt ti@:te@
+term rxvt
+
+# screen buffer lines
+defscrollback 8192
+
+# titile for current console
+hardstatus on
+#hardstatus lastline "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+
+# bottom label
+caption always "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%d %M %0c %{g}%H%{-}"
+#caption always "%{Yk}%-w%50>%{rb}%n %t%{-}%+w%81<%{- Yk}%{Bk}|%=%{bk} %Y-%m-%d %C "
+
+# screen flash off
+vbell off
+
+# keboard binding
+# bind Alt+z to move to previous window
+bindkey ^[z prev
+# bind Alt+x to move to next window
+bindkey ^[x next
+
+# bind Alt`~= to screen0~12
+bindkey "^[`" select 0
+bindkey "^[1" select 1
+bindkey "^[2" select 2
+bindkey "^[3" select 3
+bindkey "^[4" select 4
+bindkey "^[5" select 5
+bindkey "^[6" select 6
+bindkey "^[7" select 7
+bindkey "^[8" select 8
+bindkey "^[9" select 9
+bindkey "^[0" select 10
+bindkey "^[-" select 11
+bindkey "^[=" select 12
+
+# bind C-a space to show window list instead of C-a "
+bind ' ' windowlist -b
+## don't enable bellow to avoid conflict with vim
+# bind F5 to create a new screen
+#bindkey -k k5 screen
+# bind F6 to detach screen session (to background)
+#bindkey -k k6 detach
+# bind F7 to kill current screen window
+#bindkey -k k7 kill
+# bind F8 to rename current screen window
+#bindkey -k k8 title
+
+screen bash
+title work
+screen bash
+title compile
+screen bash
+title out
