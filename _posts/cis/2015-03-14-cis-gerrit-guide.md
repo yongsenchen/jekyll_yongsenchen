@@ -195,6 +195,40 @@ Submit Type:            Cherry Pick
 
    Do it in [People] > [Non-Interactive Users] > [Members], click Add.
 
+## Sync to Backup Server when Merge
+
+Use replication.config
+
+* refer to: http://blog.csdn.net/williamwanglei/article/details/38498465 "同步 Gerrit 的 openstack 项目到 Gitlab 上的 openstack 项目目录中"
+
+```
+vim /etc/gerrit/etc/replication.config
+[remote "openstack"]
+  # Gerrit project to sync
+  projects = openstack
+  url = root@gitlab.thstack.com:/home/git/repositories/devgroup/openstack.git
+  push = +refs/heads/*:refs/heads/*
+  push = +refs/tags/*:refs/tags/*
+  push = +refs/changes/*:refs/changes/*
+  threads = 3
+```
+
+## Update JIRA/BugZilla/Redmine Status
+
+* http://gerrit.googlesource.com/plugins/hooks-jira
+* its-jira, new for hook-jira: https://gerrit-review.googlesource.com/#/admin/projects/plugins/its-jira
+* https://gerrit-review.googlesource.com/#/admin/projects/plugins/hooks-jira
+* http://stackoverflow.com/questions/21328402/how-to-connect-jira-and-gerrit
+```
+In your gerrit.config file try this:
+[commentlink "jira"]
+match = ([A-Z]+-[0-9]+)
+link = http://your.jirs_side.net/browse/$1
+
+Here's more information regarding the commentlink section (https://gerrit-review.googlesource.com/Documentation/config-gerrit.html#commentlink).
+```
+
+
 # Client Side
 
 ## Register Users
