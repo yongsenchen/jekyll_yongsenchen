@@ -35,6 +35,11 @@ Split screen:
 * VI Configurations: https://github.com/ma6174/vim
 * VIM config: https://code.google.com/p/jeffy-vim
 
+# Connect from Windows
+
+* SSH Client: Putty http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
+* File Transfer: WinSCP http://winscp.net/eng/download.php
+
 ## SHELL for Putty
 * download latest version from http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html, http://www.putty.org/
 * Change color of blue if necessary.
