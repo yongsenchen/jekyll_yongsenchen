@@ -250,3 +250,8 @@ Here's more information regarding the commentlink section (https://gerrit-review
       $ ssh-keygen
       ```
 3. Change other necessary settings in [Settings] > [Profile], say User Name
+
+
+# Reference
+
+* http://www.mediawiki.org/wiki/Git/Gerrit_evaluation
