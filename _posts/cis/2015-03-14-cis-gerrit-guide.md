@@ -228,6 +228,9 @@ link = http://your.jirs_side.net/browse/$1
 Here's more information regarding the commentlink section (https://gerrit-review.googlesource.com/Documentation/config-gerrit.html#commentlink).
 ```
 
+## Integrate with JIRA in JIRA side
+
+* https://marketplace.atlassian.com/plugins/com.meetme.plugins.jira.gerrit-plugin
 
 # Client Side
 
