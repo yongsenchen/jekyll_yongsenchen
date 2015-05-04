@@ -16,3 +16,5 @@ U-boot http://lists.denx.de/pipermail/u-boot/2013-January/143409.html
 	};
 
 OpenSSL Encryption/Decryption: http://yuanshuilee.blog.163.com/blog/static/21769727520140942826137/
+
+openssl建立证书，非常详细配置ssl+apache: http://blog.51yip.com/apachenginx/958.html
